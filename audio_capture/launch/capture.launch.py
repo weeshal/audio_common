@@ -60,8 +60,8 @@ def generate_launch_description():
     _audio_capture_node = Node(
         package='audio_capture',
         name='audio_capture',
-        executable='audio_capture_node',
-        namespace=_ns,
+        node_executable='audio_capture_node',
+        node_namespace=_ns,
         remappings=[
             ('audio', _audio_topic),
         ],

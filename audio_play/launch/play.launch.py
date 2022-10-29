@@ -64,9 +64,9 @@ def generate_launch_description():
 
     _audio_play_node = Node(
         package='audio_play',
-        name='audio_play',
-        executable='audio_play_node',
-        namespace=_ns,
+        node_name='audio_play',
+        node_executable='audio_play_node',
+        node_namespace=_ns,
         remappings=[
             ('audio', _audio_topic),
         ],
